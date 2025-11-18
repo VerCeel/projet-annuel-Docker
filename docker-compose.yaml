@@ -24,7 +24,7 @@ services:
   php1:
     build:
       context: ./TP-Final-3IW-ESGI-main
-      dockerfile: site1/dockerfile
+      dockerfile: dockerfile
     environment:
       SERVEUR_NAME: "Serveur 1"
     container_name: php1
@@ -37,7 +37,7 @@ services:
   php2:
     build:
       context: ./TP-Final-3IW-ESGI-main
-      dockerfile: site2/dockerfile
+      dockerfile: dockerfile
     environment:
       SERVEUR_NAME: "Serveur 2"
     container_name: php2

@@ -24,7 +24,7 @@ RUN chown -R www-data:www-data /var/www/html \
   && chmod -R 775 /var/www/html/bootstrap/cache
 
 # Entry point pour lancer artisan
-COPY site1/entrypoint.sh /usr/local/bin/entrypoint.sh
+COPY entrypoint.sh /usr/local/bin/entrypoint.sh
 
 RUN chmod +x /usr/local/bin/entrypoint.sh
 
